@@ -2,3 +2,5 @@ Dans ce projet, on évaluera des modèles d'apprentissage automatique sur un ens
 
 L’interface de l’application :
 ![image](https://user-images.githubusercontent.com/76397726/196007261-19818c6e-834a-45a6-8c45-eb119756289a.png)
+
+lien de la data : https://www.kaggle.com/competitions/ieee-fraud-detection/data
