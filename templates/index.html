@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../static/css/style.css">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1 style="margin-bottom: 50px;">Fraud Transaction Detection</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <div class="horizontal">
+    	<input type="text" name="V34" placeholder="V34" required="required" />
+      <input type="text" name="V94" placeholder="V94" required="required" />
+		  <input type="text" name="V70" placeholder="V70" required="required" />
+      <input type="text" name="V91" placeholder="V91" required="required" />
+      <input type="text" name="V294" placeholder="V294" required="required" />
+		  <input type="text" name="C8" placeholder="C8" required="required" />
+      <input type="text" name="V308" placeholder="V308" required="required" />
+      <input type="text" name="V281" placeholder="V281" required="required" />
+		  <input type="text" name="C12" placeholder="C12" required="required" />
+		  <input type="text" name="C1" placeholder="C1" required="required" />
+      <input type="text" name="C14" placeholder="C14" required="required" />
+      <input type="text" name="addr2" placeholder="addr2" required="required" />
+      
+    </div>
+      
+      <button type="submit" style="width: 20%; height: 40px; margin-left: 40%; margin-top: 20px;" class="btn btn-primary btn-block ">Predict</button>
+    </form>
+  </div>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
